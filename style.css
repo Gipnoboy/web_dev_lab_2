@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    padding-top: 40px;
+    padding-left: 375px;
+    padding-right: 375px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: black;
+    z-index: 1000;
+    padding: 10px 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+.menu_button{
+    width: 50px;
+    height: 50px;
+    top: 35px;
+    left: 50px;
+    position: fixed;
+    z-index: 1001;  
+    opacity: 0;
+    pointer-events: none;
+    background: transparent;
+    background-image: url("./img/menu.svg");
+    border: none;
+}
+.logo, .footer_logo{
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+}
+.footer_logo{ 
+    font-size: 24px;
+}
+.logo span, .footer_logo span{
+    color: #FAFF00;
+}
+.logo {
+    font-size: 42px;
+    color: white;
+    margin-right: 75px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 30px; 
+    margin: 0;
+    padding: 0; 
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+    color: white;
+    position: relative;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #FAFF00;
+}
+.home{
+    display: flex;
+}
+.home h1{
+    font-size: 64px;
+    margin-top: 228px;
+    text-shadow: 4px 2px 1px black;
+}
+.home button{
+    width: 180px;
+    height: 52px;
+    margin-top: 60px;
+    background-color: #FAFF00;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+}
+.reasons_cont{
+    background-color: black;
+    width: 100%;
+    margin-top: 35px;
+    padding-top: 180px;
+}
+.reasons_cont h2{
+    font-size: 48px;
+}
+.reasons{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.reasons img{
+    margin-right: 16px;
+    height: 52px;
+    width: 42px;
+}
+.r1, .r2, .r3, .r4{
+    display: flex;
+}
+
+.r3, .r4{
+    margin-top: 85px;
+}
+.membership_cont{
+    margin-top: 250px;
+}
+.membership_cont h2{
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+.membership {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.membership div {
+    position: relative;
+    width: 100%; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: auto; 
+    padding: 22px;
+    border-radius: 10px;
+    background-color: #222222;
+    list-style-image: url("./img/check.svg");
+    box-sizing: border-box;
+}
+
+.membership div h3 {
+    text-align: center;
+    margin-bottom: 10px; 
+}
+
+.membership div button {
+    width: 100%;
+    max-width: 150px;
+    height: 45px;
+    background-color: #FAFF00;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    align-self: center; 
+    margin-top: 20px; 
+}
+.about_us{
+    margin-top: 252px;
+    display: flex;
+}
+.about_us h2{
+    font-size: 48px;
+    margin-bottom: 65px;
+}
+.about_us img{
+    margin-left: 120px;
+}
+.staff_cont {
+    margin-top: 240px;
+}
+
+.staff_cont h2 {
+    font-size: 48px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.staff {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.vika, .ivan, .victor, .lisa {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    width: 275px; 
+    height: 450px; 
+    background-color: #222222;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; 
+}
+
+.vika h3, .ivan h3, .victor h3, .lisa h3 {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+footer {
+    margin-top: 260px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+footer h2, footer h3 {
+    margin-bottom: 26px;
+    font-size: 18px; 
+}
+
+.phone, .gmail {
+    list-style-image: url("./img/icon_call.svg");
+    margin-right: 10px;
+}
+
+.social_m {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; 
+}
+@media screen and (max-width: 1024px) {
+    body{
+        width: 100%;
+        padding: 0;
+    }
+    .menu_button{
+        opacity: 1;
+        pointer-events: visible;
+    }
+    .logo{
+        opacity: 1;
+        font-size: 48px;
+        position: fixed;
+        left: 130px;
+        top: 35px;
+    }
+    .menu{
+        position: sticky;
+        overflow: hidden;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        z-index: 2000;
+        pointer-events: none;
+        transition-duration: 300ms;
+    }
+    .menu ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+    }
+    .menu ul li{
+        font-size: 400px;
+    }
+    .menu_opened{
+        opacity: 1;
+        pointer-events: visible;
+    }
+    .menu_opened ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 100px;
+        left: 30px; /* Left alignment for mobile menu */
+        gap: 15px;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    nav ul {
+        display: none; /* Hide links for mobile menu */
+    }
+    .home, .reasons, .membership_cont, .staff_cont, .about_us{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .reasons_cont h2{
+        text-align: center;
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .r2, .r3, .r4{
+        margin-top: 85px;
+    }
+    .membership {
+        display: flex;
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .membership div {
+        margin-bottom: 20px; 
+        height: auto; 
+    }
+
+    .membership div button {
+        width: 150px; 
+        height: 60px;
+        font-size: 32px;
+        align-items: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer h2, footer h3 {
+        font-size: 20px; 
+        text-align: center;
+    }
+
+    .phone, .gmail {
+        margin-right: 0;
+        margin-bottom: 10px; 
+    }
+
+    .social_m {
+        justify-content: center; 
+    }
+}
+
+@media screen and (max-width: 1635px){
+    .membership{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1400){
+    .membership{
+        grid-template-columns: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about_us{
+        flex-direction: column;
+    }
+    .about_us p{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .staff {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .vika, .ivan, .victor, .lisa {
+        width: 90%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    .vika h3, .ivan h3, .victor h3, .lisa h3 {
+        font-size: 16px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .staff {
+        gap: 10px; 
+    }
+
+    .vika, .ivan, .victor, .lisa {
+        width: 100%;
+        height: auto; 
+    }
+
+    .vika h3, .ivan h3, .victor h3, .lisa h3 {
+        font-size: 14px;
+    }
+    footer {
+        margin-top: 180px; 
+    }
+
+    footer h2, footer h3 {
+        font-size: 16px; 
+    }
+
+    .phone, .gmail {
+        font-size: 14px; 
+    }
+
+    .social_m {
+        gap: 10px; 
+    }
+}
